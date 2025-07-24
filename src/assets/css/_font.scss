@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('./../fonts/Rubik-Regular.ttf') format('truetype');
+    font-display: swap;
+    line-height: 1.5;
+}
+
+.text_xs {
+    font-size: 8px;
+    font-weight: 500;
+
+    @include media($md) {
+        font-size: 12px;
+    }
+}
+
+.text_s {
+    font-size: 12px;
+    font-weight: 500;
+
+    @include media($md) {
+        font-size: 16px;
+    }
+}
+
+.text_m {
+    font-size: 14px;
+    font-weight: 500;
+
+    @include media($md) {
+        font-size: 18px;
+    }
+}
+
+.text_l {
+    font-size: 20px;
+    font-weight: 500;
+
+    @include media($md) {
+        font-size: 24px;
+    }
+}
+
+.text_xl {
+    font-size: 32px;
+    font-weight: 500;
+
+    @include media($md) {
+        font-size: 36px;
+    }
+}
+
+.text_xs_bold {
+    font-size: 8px;
+    font-weight: 700;
+
+    @include media($md) {
+        font-size: 12px;
+    }
+}
+
+.text_s_bold {
+    font-size: 12px;
+    font-weight: 700;
+
+    @include media($md) {
+        font-size: 16px;
+    }
+}
+
+.text_m_bold {
+    font-size: 14px;
+    font-weight: 700;
+
+    @include media($md) {
+        font-size: 18px;
+    }
+}
+
+.text_l_bold {
+    font-size: 20px;
+    font-weight: 700;
+
+    @include media($md) {
+        font-size: 24px;
+    }
+}
+
+.text_xl_bold {
+    font-size: 32px;
+    font-weight: 700;
+
+    @include media($md) {
+        font-size: 36px;
+    }
+}
+
+.text_xs_header {
+    font-size: 16px;
+    font-weight: bolder;
+
+    @include media($md) {
+        font-size: 18px;
+    }
+}
+
+.text_s_header {
+    font-size: 20px;
+    font-weight: bolder;
+
+    @include media($md) {
+        font-size: 24px;
+    }
+}
+
+.text_m_header {
+    font-size: 24px;
+    font-weight: bolder;
+
+    @include media($md) {
+        font-size: 36px;
+    }
+}
+
+.text_l_header {
+    font-size: 36px;
+    font-weight: bolder;
+
+    @include media($md) {
+        font-size: 48px;
+    }
+}
+
+.text_xl_header {
+    font-size: 48px;
+    font-weight: bolder;
+
+    @include media($md) {
+        font-size: 64px;
+    }
+}

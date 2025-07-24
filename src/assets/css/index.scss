@@ -1,0 +1,39 @@
+@import "_breakpoints";
+@import "_root";
+@import "_tools";
+@import "_font";
+@import "_pages";
+@import "_shadow";
+@import "_transition";
+
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik';
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-width: var(--widthContent);
+    margin: 0 auto;
+}
+
+input:focus-visible {
+    outline: 1px white;
+}
+
+input:focus {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.visually_hidden {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}

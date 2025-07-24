@@ -1,0 +1,83 @@
+.logo {
+    width: 50px;
+
+    @include media($md) {
+        width: 152px;
+    }
+}
+
+// icon
+.icon {
+    svg {
+        path {
+            fill: var(--whiteColor);
+        }
+    }
+}
+
+// buttons
+.primary_bttn {
+    background-color: var(--primaryColor);
+    border-radius: var(--borderRadius);
+    color: var(--whiteColor);
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.secondary_bttn {
+    display: none;
+    background-color: var(--secondaryColor);
+    border-radius: var(--borderRadius);
+    color: var(--whiteColor);
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+
+    @include media($sm) {
+        display: block;
+    }
+}
+
+.inside_bttn_position {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    gap: 8px;
+
+    p {
+        display: none;
+
+        @include media($md) {
+            display: block;
+        }
+    }
+}
+
+// icon
+.search_input {
+    border: 1px solid var(--secondaryColor);
+    border-radius: var(--borderRadius);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+
+    input {
+        width: 100%;
+        padding: 8px;
+        border: none;
+    }
+
+    input:focus + .search_icon {
+        svg {
+            path {
+                fill: var(--secondaryColor);
+            }
+        }
+    }
+}
+
+.search_icon {
+    padding: 8px;
+}
