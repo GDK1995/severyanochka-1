@@ -6,6 +6,15 @@
     }
 }
 
+.banner {
+    display: flex;
+
+    img {
+        margin: 20px auto;
+        width: 100%;
+    }
+}
+
 // icon
 .icon {
     svg {

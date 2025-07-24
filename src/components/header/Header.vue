@@ -7,7 +7,7 @@ import NavItem from './NavItem.vue'
 import ProfileNav from './ProfileNav.vue'
 import { ref } from 'vue'
 
-const isToggle = ref(false)
+const isToggle = ref(true)
 
 function toggle() {
   isToggle.value = !isToggle.value
@@ -15,7 +15,7 @@ function toggle() {
 </script>
 
 <template>
-  <header class="container header box_shadow_s">
+  <header class="header box_shadow_s">
     <logo class="header_logo"/>
     <div class="header_search">
       <MainBttn />
