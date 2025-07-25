@@ -46,7 +46,7 @@ export const products = [
     desc: 'Сделано в КЗ',
     rate: 3,
     price: 100,
-    sale_price: 50,
+    sale_price: 0,
     currency: 'KZ',
     image: '/products/butter.png'
   },
@@ -63,7 +63,7 @@ export const products = [
   {
     id: 5,
     title: 'Колготки',
-    desc: '',
+    desc: 'Тянутся',
     rate: 2,
     price: 500,
     sale_price: 150,
@@ -73,10 +73,30 @@ export const products = [
   {
     id: 6,
     title: 'Молоко',
-    desc: '',
+    desc: 'Вкусное молоко',
     rate: 3,
     price: 100,
     sale_price: 50,
+    currency: 'KZ',
+    image: '/products/image1.png'
+  },
+  {
+    id: 7,
+    title: 'Газированная вода',
+    desc: 'лечебно-столовая азотная акротерма',
+    rate: 3,
+    price: 330,
+    sale_price: 0,
+    currency: 'KZ',
+    image: '/products/kolbasa.png'
+  },
+  {
+    id: 8,
+    title: 'TUC',
+    desc: 'со вкусом Чили',
+    rate: 2,
+    price: 530,
+    sale_price: 0,
     currency: 'KZ',
     image: '/products/image1.png'
   }

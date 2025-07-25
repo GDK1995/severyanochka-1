@@ -6,7 +6,8 @@ import RateStars from './RateStars.vue'
 import SaleLabel from './SaleLabel.vue'
 
 const props = defineProps<{
-  product: object
+  product: Object,
+  type: String
 }>()
 </script>
 
@@ -15,17 +16,17 @@ const props = defineProps<{
     <figure class="card_cover">
       <img width="270px" height="160px" :src="product.image" :alt="product.title">
       <div class="card_fav" v-html="FAV"/>
-      <SaleLabel class="card_sale"/>
+      <SaleLabel v-if="type === 'sale'" class="card_sale"/>
     </figure>
     <div class="card_desc">
       <div class="card_price">
         <div>
           <p class="text_m_bold">{{product.price}} {{product.currency}}</p>
-          <span>С картой</span>
+          <span v-if="type === 'sale'">{{$t('with_card')}}</span>
         </div>
-        <div>
+        <div v-if="type === 'sale'">
           <p class="text_s">{{product.sale_price}} {{product.currency}}</p>
-          <span>Основная</span>
+          <span>{{$t('ordinary')}}</span>
         </div>
       </div>
       <h3 class="text_s card_titles">{{ product.title }}</h3>

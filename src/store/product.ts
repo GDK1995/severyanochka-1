@@ -6,6 +6,8 @@ export const useProductStore = defineStore('product', {
     products: allProducts
   }),
   getters: {
-    limitedSaleProducts: (state) => state.products.filter(product => product.sale_price).slice(0, 4)
+    limitedProducts: (state) => state.products.slice(0, 4),
+    limitedSaleProducts: (state) => state.products.filter(product => product.sale_price).slice(0, 4),
+    shuffledProducts: (state) => [...state.products].sort(() => Math.random() - 0.5).slice(0, 4)
   }
 })

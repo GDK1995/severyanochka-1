@@ -15,6 +15,25 @@
     }
 }
 
+.special_banner {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    max-width: var(--widthInContent);
+    margin-inline: auto;
+}
+
+.special_banner_img {
+    display: flex;
+    gap: 40px;
+    overflow: auto;
+    flex-wrap: nowrap;
+    
+    img {
+        width: 100%;
+    }
+}
+
 // icon
 .icon {
     svg {

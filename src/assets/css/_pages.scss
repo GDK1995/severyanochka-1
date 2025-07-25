@@ -110,9 +110,26 @@
 .parts {
     display: flex;
     flex-direction: column;
-    width: var(--widthInContent);
+    max-width: var(--widthInContent);
     margin-inline: auto;
     gap: 40px;
+    width: 300px;
+
+    @include media($sm) {
+        width: 500px;
+    }
+
+    @include media($md) {
+        width: 600px;
+    }
+
+    @include media($lg) {
+        width: 900px;
+    }
+
+    @include media($xl) {
+        width: unset;
+    }
 }
 
 .parts_header {
@@ -137,4 +154,14 @@
 .parts_list {
     display: flex;
     gap: 40px;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+}
+
+// main
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
 }

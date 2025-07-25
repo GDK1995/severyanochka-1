@@ -10,7 +10,15 @@ const messages = {
     profile: 'Профиль',
     logout: 'Выйти',
     login: 'Войти',
-    to_cart: 'В корзину'
+    to_cart: 'В корзину',
+    sales: 'Акции',
+    all_sales: 'Все акции',
+    with_card: 'С картой',
+    ordinary: 'Обычная',
+    new_items: 'Новинки',
+    bought_before: 'Покупали раньше',
+    all_new_items: 'Все новинки',
+    all_bought_before: 'Все покупки'
   },
   en: {
     sever: 'Северяночка',
@@ -23,7 +31,15 @@ const messages = {
     profile: 'Profile',
     logout: 'Logout',
     login: 'Login',
-    to_cart: 'Add to cart'
+    to_cart: 'Add to cart',
+    sales: 'Sales',
+    all_sales: 'All sale',
+    with_card: 'With card',
+    ordinary: 'Ordinary',
+    new_items: 'New items',
+    bought_before: 'Bought before',
+    all_new_items: 'All new items',
+    all_bought_before: 'All purchases'
   },
   kz: {
     sever: 'Северяночка',
@@ -36,7 +52,15 @@ const messages = {
     profile: 'Профиль',
     logout: 'Шығу',
     login: 'Кіру',
-    to_cart: 'Себетке'
+    to_cart: 'Себетке',
+    sales: 'Акции',
+    all_sales: 'Барлық акциялар',
+    with_card: 'Картамен',
+    ordinary: 'Кәдімгі',
+    new_items: 'Жаңа тауар',
+    bought_before: 'Бұрын сатып алған',
+    all_new_items: 'Бар жаңа тауарлар',
+    all_bought_before: 'Бар сатып алулар'
   }
 }
 
