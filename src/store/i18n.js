@@ -9,7 +9,8 @@ const messages = {
     cart: 'Корзина',
     profile: 'Профиль',
     logout: 'Выйти',
-    login: 'Войти'
+    login: 'Войти',
+    to_cart: 'В корзину'
   },
   en: {
     sever: 'Северяночка',
@@ -21,7 +22,8 @@ const messages = {
     cart: 'Cart',
     profile: 'Profile',
     logout: 'Logout',
-    login: 'Login'
+    login: 'Login',
+    to_cart: 'Add to cart'
   },
   kz: {
     sever: 'Северяночка',
@@ -33,7 +35,8 @@ const messages = {
     cart: 'Себет',
     profile: 'Профиль',
     logout: 'Шығу',
-    login: 'Кіру'
+    login: 'Кіру',
+    to_cart: 'Себетке'
   }
 }
 

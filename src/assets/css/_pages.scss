@@ -23,6 +23,11 @@
     }
 }
 
+.position_center {
+    display: flex;
+    justify-content: center;
+}
+
 // header
 .header {
     display: flex;
@@ -99,4 +104,37 @@
     li {
         padding: 8px 4px;
     }
+}
+
+// lists
+.parts {
+    display: flex;
+    flex-direction: column;
+    width: var(--widthInContent);
+    margin-inline: auto;
+    gap: 40px;
+}
+
+.parts_header {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        display: flex;
+        color: var(--grayColor);
+        text-decoration: none;
+
+        svg {
+            transform: rotate(-90deg);
+
+            path {
+                fill: var(--grayColor);
+            }
+        }
+    }
+}
+
+.parts_list {
+    display: flex;
+    gap: 40px;
 }

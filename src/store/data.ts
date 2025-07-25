@@ -19,7 +19,7 @@ export const users = [
   }
 ]
 
-export const sales = [
+export const products = [
   {
     id: 1,
     title: 'Блинчики с мясом',
@@ -27,51 +27,57 @@ export const sales = [
     rate: 5,
     price: 100,
     sale_price: 50,
-    currency: 'KZ'
+    currency: 'KZ',
+    image: '/products/image.png'
   },
   {
     id: 2,
     title: 'Колбаса',
-    desc: '',
-    rate: 4.3,
+    desc: 'Хоршая колбаса. Прекрасная колбаса. Сладкая. Вкусная',
+    rate: 4,
     price: 150,
     sale_price: 60,
-    currency: 'KZ'
+    currency: 'KZ',
+    image: '/products/kolbasa.png'
   },
   {
     id: 3,
     title: 'Оливковое масло',
-    desc: '',
-    rate: 5,
+    desc: 'Сделано в КЗ',
+    rate: 3,
     price: 100,
     sale_price: 50,
-    currency: 'KZ'
+    currency: 'KZ',
+    image: '/products/butter.png'
   },
   {
     id: 4,
     title: 'Вафли',
-    desc: '',
-    rate: 5,
+    desc: 'Арахисовое, сладкие вафли сдаленные в Алматы',
+    rate: 1,
     price: 1020,
     sale_price: 540,
-    currency: 'KZ'
+    currency: 'KZ',
+    image: '/products/leksika-angl.jpeg'
   },
   {
     id: 5,
     title: 'Колготки',
     desc: '',
-    rate: 2.5,
+    rate: 2,
     price: 500,
     sale_price: 150,
-    currency: 'KZ'
+    currency: 'KZ',
+    image: '/products/leksika-angl.jpeg'
   },
   {
     id: 6,
-    title: 'Туалетная бумага',
+    title: 'Молоко',
     desc: '',
     rate: 3,
     price: 100,
     sale_price: 50,
-    currency: 'KZ'
+    currency: 'KZ',
+    image: '/products/image1.png'
   }
 ]

@@ -34,6 +34,21 @@
     cursor: pointer;
 }
 
+.outline_bttn {
+    background-color: var(--whiteColor);
+    border-radius: var(--borderRadius);
+    color: var(--secondaryColor);
+    border: 1px solid var(--secondaryColor);
+    padding: 8px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--primaryColor);
+        border: none;
+        color: var(--whiteColor);
+    }
+}
+
 .secondary_bttn {
     display: none;
     background-color: var(--secondaryColor);
@@ -63,6 +78,10 @@
     }
 }
 
+.inside_bttn_position_center {
+    text-align: center;
+}
+
 // icon
 .search_input {
     border: 1px solid var(--secondaryColor);
@@ -89,4 +108,81 @@
 
 .search_icon {
     padding: 8px;
+}
+
+// card
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    border-radius: var(--borderRadius);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card_cover {
+    position: relative;
+
+    .card_fav {
+        position: absolute;
+        top: 10px;
+        right: 8px;
+
+        &:hover {
+            svg {
+                path {
+                    fill: var(--primaryColor);
+                }
+            }
+        }
+    }
+
+    .card_sale {
+        position: absolute;
+        bottom: 10px;
+        left: 8px;
+    }
+}
+
+.labels {
+    border-radius: var(--borderRadius);
+    background-color: var(--primaryColor);
+    padding: 4px 8px;
+    color: var(--whiteColor);
+    display: inline-block;
+}
+
+.card_desc {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+}
+
+.card_price {
+    display: flex;
+    justify-content: space-between;
+    
+    span {
+        color: var(--grayColor);
+    }
+}
+
+.card_titles {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+// rate
+.rate {
+    display: flex;
+    gap: 4px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.star {
+  width: 16px;
+  height: 16px;
+  transition: fill 0.2s ease;
 }
