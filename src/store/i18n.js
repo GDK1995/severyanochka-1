@@ -18,7 +18,12 @@ const messages = {
     new_items: 'Новинки',
     bought_before: 'Покупали раньше',
     all_new_items: 'Все новинки',
-    all_bought_before: 'Все покупки'
+    all_bought_before: 'Все покупки',
+    almaty: 'Алматы',
+    astana: 'Астана',
+    shymkent: 'Шымкент',
+    aktau: 'Актау',
+    our_shops: 'Наши магазины'
   },
   en: {
     sever: 'Северяночка',
@@ -39,7 +44,12 @@ const messages = {
     new_items: 'New items',
     bought_before: 'Bought before',
     all_new_items: 'All new items',
-    all_bought_before: 'All purchases'
+    all_bought_before: 'All purchases',
+    almaty: 'Almaty',
+    astana: 'Astana',
+    shymkent: 'Shymkent',
+    aktau: 'Aktau',
+    our_shops: 'Our shops'
   },
   kz: {
     sever: 'Северяночка',
@@ -60,7 +70,12 @@ const messages = {
     new_items: 'Жаңа тауар',
     bought_before: 'Бұрын сатып алған',
     all_new_items: 'Бар жаңа тауарлар',
-    all_bought_before: 'Бар сатып алулар'
+    all_bought_before: 'Бар сатып алулар',
+    almaty: 'Алматы',
+    astana: 'Астана',
+    shymkent: 'Шымкент',
+    aktau: 'Ақтау',
+    our_shops: 'Біздің дүкендер'
   }
 }
 

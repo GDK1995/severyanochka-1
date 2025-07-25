@@ -159,6 +159,15 @@
     overflow-x: auto;
 }
 
+.shops {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    max-width: var(--widthInContent);
+    width: 100%;
+    gap: 40px;
+}
+
 // main
 main {
     display: flex;
