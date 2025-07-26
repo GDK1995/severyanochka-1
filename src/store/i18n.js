@@ -23,7 +23,14 @@ const messages = {
     astana: 'Астана',
     shymkent: 'Шымкент',
     aktau: 'Актау',
-    our_shops: 'Наши магазины'
+    our_shops: 'Наши магазины',
+    more_details: 'Подробнее',
+    articles: 'Статьи',
+    more_articles: 'Все статьи',
+    about_company: 'О компании',
+    contacts: 'Контакты',
+    vacancy: 'Вакансии',
+    policy_conf: 'Политика обработки персональных данных'
   },
   en: {
     sever: 'Северяночка',
@@ -49,7 +56,14 @@ const messages = {
     astana: 'Astana',
     shymkent: 'Shymkent',
     aktau: 'Aktau',
-    our_shops: 'Our shops'
+    our_shops: 'Our shops',
+    more_details: 'More details',
+    articles: 'Articles',
+    more_articles: 'All articles',
+    about_company: 'About the company',
+    contacts: 'Сontacts',
+    vacancy: 'Vacancies',
+    policy_conf: 'Personal data processing policy'
   },
   kz: {
     sever: 'Северяночка',
@@ -75,7 +89,14 @@ const messages = {
     astana: 'Астана',
     shymkent: 'Шымкент',
     aktau: 'Ақтау',
-    our_shops: 'Біздің дүкендер'
+    our_shops: 'Біздің дүкендер',
+    more_details: 'Толығырақ',
+    articles: 'Мақалалар',
+    more_articles: 'Бар мақала',
+    about_company: 'Компания туралы',
+    contacts: 'Контактілер',
+    vacancy: 'Бос орындар',
+    policy_conf: 'Жеке деректерді өңдеу саясаты'
   }
 }
 

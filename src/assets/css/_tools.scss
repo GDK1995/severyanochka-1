@@ -82,6 +82,20 @@
     }
 }
 
+.secondary_bttn_style {
+    background-color: var(--secondaryColor);
+    border-radius: var(--borderRadius);
+    color: var(--whiteColor);
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+
+    &:disabled {
+        background-color: var(--secondaryMuteColor);
+        color: var(--secondaryColor);
+    }
+}
+
 .inside_bttn_position {
     display: flex;
     margin: 0 auto;
@@ -127,6 +141,36 @@
 
 .search_icon {
     padding: 8px;
+}
+
+// article
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 375px;
+    background: var(--whiteColor);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: var(--borderRadius);
+
+    img {
+        border-top-right-radius: var(--borderRadius);
+        border-top-left-radius: var(--borderRadius);
+    }
+}
+
+.article_more {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.article_text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 // card

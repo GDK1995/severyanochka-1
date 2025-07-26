@@ -174,3 +174,35 @@ main {
     flex-direction: column;
     gap: 120px;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: var(--widthInContent);
+    margin-inline: auto;
+    padding: 24px 0;
+
+    figure img {
+        width: 64px;
+    }
+}
+
+.footer_pages {
+    display: flex;
+    gap: 40px;
+}
+
+.footer_contacts {
+    display: flex;
+    gap: 40px;
+}
+
+.footer_social {
+    display: flex;
+    gap: 16px;
+}
+
+.footer_phone {
+    display: flex;
+    gap: 8px;
+}

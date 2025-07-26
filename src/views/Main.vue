@@ -5,6 +5,7 @@ import MainBanner from './../components/banner/MainBanner.vue'
 import SpecialBanner from './../components/banner/SpecialBanner.vue'
 import PartList from './../components/lists/PartList.vue'
 import TabItems from './../components/items/TabItems.vue'
+import ArticleList from './../components/lists/ArticleList.vue'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
@@ -61,5 +62,6 @@ const listTitels: titleItem[] = [
       <h3 class="text_m_header">{{$t('our_shops')}}</h3>
       <tab-items />
     </div>
+    <article-list />
   </main>
 </template>
