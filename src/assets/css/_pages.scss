@@ -157,6 +157,10 @@
     flex-wrap: nowrap;
     scroll-snap-type: x mandatory;
     overflow-x: auto;
+
+    @include media($xl) {
+        overflow: unset;
+    }
 }
 
 .shops {
@@ -173,36 +177,122 @@ main {
     display: flex;
     flex-direction: column;
     gap: 120px;
+    background-color: var(--bgColor);
+    padding-bottom: 40px;
 }
 
 footer {
+    background-color: var(--footerBgColor);
+    background-image: url("/pattern2.png");
+    background-repeat: repeat-x;
+    background-size: auto;
     display: flex;
-    justify-content: space-between;
-    width: var(--widthInContent);
-    margin-inline: auto;
-    padding: 24px 0;
+
+    figure {
+        flex: 1 1 50%;
+
+        @include media($md) {
+            flex: unset;
+        }
+
+    }
 
     figure img {
         width: 64px;
     }
 }
 
+.footer_inner {
+    max-width: var(--widthInContent);
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @include media($lg) {
+        padding: 12px;
+    }
+
+    @include media($xl) {
+        padding: 24px 0;
+    }
+}
+
 .footer_pages {
     display: flex;
-    gap: 40px;
+    gap: 8px;
+    order: 3;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    flex: 1 1 100%;
+
+    @include media($md) {
+        margin-top: unset;
+        width: 310px;
+        order: 2;
+        flex: unset;
+    }
+
+    @include media($lg) {
+        width: unset;
+        gap: 40px;
+    }
 }
 
 .footer_contacts {
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+    gap: 16px;
+    order: 2;
+    flex: 1 1 50%;
+
+    @include media($md) {
+        flex-direction: row;
+        gap: 24px;
+        flex: unset;
+        order: 3;
+    }
+
+    @include media($lg) {
+        gap: 40px;
+    }
 }
 
 .footer_social {
     display: flex;
-    gap: 16px;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    @include media($md) {
+        width: 56px;
+    }
+
+    @include media($lg) {
+        gap: 16px;
+        width: unset;
+    }
 }
 
 .footer_phone {
     display: flex;
     gap: 8px;
+}
+
+.footer_phone p {
+    margin: auto 0;
+
+    @include media($md) {
+        margin: unset;
+    }
+}
+
+.background_footer {
+    
+    svg {
+        path {
+            fill: var(--whiteColor);
+        }
+    }
 }

@@ -1,7 +1,11 @@
 <script lang="ts" setup>
+import { computed } from 'vue'
 import { ARROW } from './../../store/icons'
 import ArticleCard from './../items/ArticleCard.vue'
-import { articles } from './../../store/data'
+import { useArticleStore } from './../../store/articles'
+
+const articlesStore = useArticleStore()
+const limitedArticles = computed(() => articlesStore.limitedArticles)
 </script>
 
 <template>
@@ -14,7 +18,7 @@ import { articles } from './../../store/data'
       </router-link>
     </div>
     <ul class="parts_list">
-      <li v-for="(article, index) in articles" :key="article + index">
+      <li v-for="(article, index) in limitedArticles" :key="article + index">
         <ArticleCard :article="article"/>
       </li>
     </ul>

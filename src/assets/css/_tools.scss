@@ -10,7 +10,7 @@
     display: flex;
 
     img {
-        margin: 20px auto;
+        margin: 5px auto;
         width: 100%;
     }
 }
@@ -159,6 +159,10 @@
     }
 }
 
+.article:hover {
+    box-shadow: var(--shadow_m_orange);
+}
+
 .article_more {
     padding: 10px;
     display: flex;
@@ -180,6 +184,11 @@
     width: 270px;
     border-radius: var(--borderRadius);
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--whiteColor);
+}
+
+.card:hover {
+    box-shadow: var(--shadow_m_orange);
 }
 
 .card_cover {

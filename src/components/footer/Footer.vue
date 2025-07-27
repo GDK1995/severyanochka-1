@@ -10,21 +10,23 @@ const socialList = [INSTAGRAM, TELEGRAM, WHATSAPP, YOUTUBE]
 
 <template>
   <footer>
-    <figure>
-      <img src="/short_logo.svg" alt="short-logo">
-    </figure>
-    <div class="footer_pages">
-      <router-link v-for="page in pageList" :key="page" class="text_xs" to="/">
-        {{page}}
-      </router-link>
-    </div>
-    <div class="footer_contacts">
-      <div class="footer_social">
-        <div v-for="social in socialList" :key="social" v-html="social"/>
+    <div class="footer_inner">
+      <figure>
+        <img src="/short_logo.svg" alt="short-logo">
+      </figure>
+      <div class="footer_pages">
+        <router-link v-for="page in pageList" :key="page" class="text_xs" to="/">
+            {{page}}
+        </router-link>
       </div>
-      <div class="footer_phone">
-        <div v-html="PHONE"/>
-        <p>8 800 777 33 33</p>
+      <div class="footer_contacts">
+        <div class="footer_social">
+            <div v-for="social in socialList" :key="social" v-html="social"/>
+        </div>
+        <div class="footer_phone">
+            <div v-html="PHONE"/>
+            <p class="text_s">8 800 777 33 33</p>
+        </div>
       </div>
     </div>
   </footer>
