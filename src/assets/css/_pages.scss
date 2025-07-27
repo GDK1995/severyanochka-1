@@ -139,7 +139,7 @@
     a {
         display: flex;
         color: var(--grayColor);
-        text-decoration: none;
+        margin: auto 0;
 
         svg {
             transform: rotate(-90deg);
@@ -181,6 +181,7 @@ main {
     padding-bottom: 40px;
 }
 
+// footer
 footer {
     background-color: var(--footerBgColor);
     background-image: url("/pattern2.png");
@@ -227,6 +228,10 @@ footer {
     flex-wrap: wrap;
     margin-top: 24px;
     flex: 1 1 100%;
+
+    a {
+        color: black;
+    }
 
     @include media($md) {
         margin-top: unset;

@@ -1,11 +1,36 @@
 <script setup lang="ts">
 import { SEARCH } from './../../store/icons'
+import { useProductStore } from './../../store/product'
+
+const productStore = useProductStore()
+
+function highlightMatch(text: string, query: string) {
+  if (!query) return text;
+
+  const regex = new RegExp(`(${query})`, 'ig')
+  return text.replace(regex, '<strong>$1</strong>')
+}
 </script>
 
 <template>
-  <div class="search_input text_s">
-    <label for="search-input" class="visually_hidden">{{$t('searching_by_product')}}</label>
-    <input id="search-input" type="search" :placeholder="$t('search_item')">
-    <div class="search_icon" v-html="SEARCH"/>
+  <div class="to_search">
+    <div
+      class="search_input text_s"
+      :class="[productStore.searchedProducts.length ? 'search_not_empty' : 'search_empty']">
+      <label for="search-input" class="visually_hidden">{{$t('searching_by_product')}}</label>
+      <input
+        id="search-input"
+        type="search"
+        :placeholder="$t('search_item')"
+        v-model="productStore.query">
+      <div class="search_icon" v-html="SEARCH"/>
+    </div>
+    <ul :class="[productStore.searchedProducts.length ? 'search_list_not_empty' : 'search_list_empty']">
+      <li
+        v-for="item in productStore.searchedProducts"
+        :key="item.id"
+        v-html="highlightMatch(item.title, productStore.query)">
+      </li>
+    </ul>
   </div>
 </template>
