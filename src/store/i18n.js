@@ -32,7 +32,8 @@ const messages = {
     vacancy: 'Вакансии',
     policy_conf: 'Политика обработки персональных данных',
     results_of_search: 'Результаты поиска',
-    on_request: 'по запросу'
+    on_request: 'по запросу',
+    nothing_found: 'ничего не найдено'
   },
   en: {
     sever: 'Северяночка',
@@ -67,7 +68,8 @@ const messages = {
     vacancy: 'Vacancies',
     policy_conf: 'Personal data processing policy',
     results_of_search: 'Results of search',
-    on_request: 'on request'
+    on_request: 'on request',
+    nothing_found: 'nothing found'
   },
   kz: {
     sever: 'Северяночка',
@@ -102,7 +104,8 @@ const messages = {
     vacancy: 'Бос орындар',
     policy_conf: 'Жеке деректерді өңдеу саясаты',
     results_of_search: 'Іздеу нәтижелері',
-    on_request: 'сұраныс бойынша'
+    on_request: 'сұраныс бойынша',
+    nothing_found: 'ештеңе табылмады'
   }
 }
 

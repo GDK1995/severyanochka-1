@@ -13,7 +13,7 @@ const props = defineProps<{
   <div class="full_product">
     <ul class="full_product_list">
       <li v-for="(product, index) in props.list" :key="product + index">
-        <Card :product="product"/>
+        <Card :product="product" type="last_bought"/>
       </li>
     </ul>
   </div>

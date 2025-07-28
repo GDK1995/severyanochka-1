@@ -35,6 +35,7 @@
     gap: 40px;
     padding: 8px;
     flex-wrap: wrap;
+    background-color: var(--whiteColor);
 }
 
 .header_search {
@@ -116,8 +117,14 @@
     width: 100%;
     padding-top: 40px;
 
-    span {
-        color: var(--primaryColor);
+    .titels {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        span {
+            color: var(--primaryColor);
+        }
     }
 }
 
@@ -204,6 +211,7 @@ main {
     display: flex;
     flex-direction: column;
     padding-bottom: 40px;
+    flex: 1;
 }
 
 .space_120 {

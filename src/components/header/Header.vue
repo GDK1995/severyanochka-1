@@ -7,7 +7,7 @@ import NavItem from './NavItem.vue'
 import ProfileNav from './ProfileNav.vue'
 import { ref } from 'vue'
 
-const isToggle = ref(true)
+const isToggle = ref(false)
 
 function toggle() {
   isToggle.value = !isToggle.value
