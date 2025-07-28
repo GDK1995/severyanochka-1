@@ -99,6 +99,56 @@ export const products = [
     sale_price: 0,
     currency: 'KZ',
     image: '/products/image1.png'
+  },
+  {
+    id: 9,
+    title: 'Колготки черные',
+    desc: 'размер колгот L',
+    rate: 4,
+    price: 1030,
+    sale_price: 0,
+    currency: 'KZ',
+    image: '/products/image1.png'
+  },
+  {
+    id: 10,
+    title: 'Колготки сетка',
+    desc: 'размер колгот L',
+    rate: 4,
+    price: 2130,
+    sale_price: 0,
+    currency: 'KZ',
+    image: '/products/image1.png'
+  },
+  {
+    id: 11,
+    title: 'Колготки сетка',
+    desc: 'размер колгот S',
+    rate: 4,
+    price: 2130,
+    sale_price: 0,
+    currency: 'KZ',
+    image: '/products/image1.png'
+  },
+  {
+    id: 12,
+    title: 'Колготки сетка',
+    desc: 'размер колгот M',
+    rate: 3,
+    price: 2130,
+    sale_price: 0,
+    currency: 'KZ',
+    image: '/products/image1.png'
+  },
+  {
+    id: 13,
+    title: 'Колготки белые',
+    desc: 'размер колгот XL',
+    rate: 3,
+    price: 1130,
+    sale_price: 0,
+    currency: 'KZ',
+    image: '/products/image1.png'
   }
 ]
 

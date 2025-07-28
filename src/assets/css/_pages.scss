@@ -106,10 +106,31 @@
     }
 }
 
+// search page
+.search_page {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--widthInContent);
+    margin-inline: auto;
+    gap: 24px;
+    width: 100%;
+    padding-top: 40px;
+}
+
 // lists
+.full_product {
+}
+
+.full_product_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
 .parts {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     max-width: var(--widthInContent);
     margin-inline: auto;
     gap: 40px;
@@ -176,9 +197,11 @@
 main {
     display: flex;
     flex-direction: column;
-    gap: 120px;
-    background-color: var(--bgColor);
     padding-bottom: 40px;
+}
+
+.space_120 {
+    gap: 120px;
 }
 
 // footer

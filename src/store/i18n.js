@@ -30,7 +30,9 @@ const messages = {
     about_company: 'О компании',
     contacts: 'Контакты',
     vacancy: 'Вакансии',
-    policy_conf: 'Политика обработки персональных данных'
+    policy_conf: 'Политика обработки персональных данных',
+    results_of_search: 'Результаты поиска',
+    on_request: 'по запросу'
   },
   en: {
     sever: 'Северяночка',
@@ -63,7 +65,9 @@ const messages = {
     about_company: 'About the company',
     contacts: 'Сontacts',
     vacancy: 'Vacancies',
-    policy_conf: 'Personal data processing policy'
+    policy_conf: 'Personal data processing policy',
+    results_of_search: 'Results of search',
+    on_request: 'on request'
   },
   kz: {
     sever: 'Северяночка',
@@ -96,7 +100,9 @@ const messages = {
     about_company: 'Компания туралы',
     contacts: 'Контактілер',
     vacancy: 'Бос орындар',
-    policy_conf: 'Жеке деректерді өңдеу саясаты'
+    policy_conf: 'Жеке деректерді өңдеу саясаты',
+    results_of_search: 'Іздеу нәтижелері',
+    on_request: 'сұраныс бойынша'
   }
 }
 

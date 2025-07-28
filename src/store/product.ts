@@ -15,5 +15,10 @@ export const useProductStore = defineStore('product', {
       if (!q) return []
       return state.products.filter(product => product.title.toLowerCase().includes(q))
     }
+  },
+  actions: {
+    setQuery(newQuery: string) {
+      this.query = newQuery
+    }
   }
 })

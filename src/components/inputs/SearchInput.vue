@@ -1,14 +1,21 @@
 <script setup lang="ts">
 import { SEARCH } from './../../store/icons'
+import { useRouter } from 'vue-router'
 import { useProductStore } from './../../store/product'
 
 const productStore = useProductStore()
+const router = useRouter()
 
 function highlightMatch(text: string, query: string) {
   if (!query) return text;
 
   const regex = new RegExp(`(${query})`, 'ig')
   return text.replace(regex, '<strong>$1</strong>')
+}
+
+function handleClick(q: string) {
+  productStore.setQuery(q)
+  router.push('/results')
 }
 </script>
 
@@ -29,7 +36,8 @@ function highlightMatch(text: string, query: string) {
       <li
         v-for="item in productStore.searchedProducts"
         :key="item.id"
-        v-html="highlightMatch(item.title, productStore.query)">
+        v-html="highlightMatch(item.title, productStore.query)"
+        @click="handleClick(item.title)">
       </li>
     </ul>
   </div>
