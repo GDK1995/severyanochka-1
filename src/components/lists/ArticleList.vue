@@ -11,7 +11,7 @@ const limitedArticles = computed(() => articlesStore.limitedArticles)
 <template>
   <div class="parts">
     <div class="parts_header">
-      <h1>{{$t('articles')}}</h1>
+      <h1 class="text_m_header">{{$t('articles')}}</h1>
       <router-link to="/">
         {{$t('more_articles')}}
         <div v-html="ARROW"/>

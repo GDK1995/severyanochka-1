@@ -8,8 +8,8 @@ const productStore = useProductStore()
 <template>
   <main class="search_page">
     <div class="titels">
-      <h1>{{$t('results_of_search')}}</h1>
-      <p>
+      <h1 class="text_m_header">{{$t('results_of_search')}}</h1>
+      <p class="text_l">
         {{$t('on_request')}}
         <span>{{productStore.query}}</span>
       </p>

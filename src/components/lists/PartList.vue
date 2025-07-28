@@ -26,7 +26,7 @@ const props = defineProps<{
 <template>
   <div class="parts">
     <div class="parts_header">
-      <h1>{{props.title}}</h1>
+      <h1 class="text_m_header">{{props.title}}</h1>
       <router-link :to="props.link">
         {{props.linkTitle}}
         <div v-html="ARROW"/>

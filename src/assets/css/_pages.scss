@@ -115,6 +115,10 @@
     gap: 24px;
     width: 100%;
     padding-top: 40px;
+
+    span {
+        color: var(--primaryColor);
+    }
 }
 
 // lists
