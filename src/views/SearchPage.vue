@@ -14,6 +14,6 @@ const productStore = useProductStore()
         <span>{{productStore.query}}</span>
       </p>
     </div>
-    <full-product-list :list="productStore.searchedProducts"/>
+    <full-product-list :list="productStore.searched"/>
   </main>
 </template>

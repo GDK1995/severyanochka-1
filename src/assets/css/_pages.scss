@@ -123,11 +123,13 @@
 
 // lists
 .full_product {
+    
 }
 
 .full_product_list {
     display: flex;
     flex-wrap: wrap;
+    align-self: center;
     gap: 40px;
 }
 
