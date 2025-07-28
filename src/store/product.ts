@@ -20,5 +20,15 @@ export const useProductStore = defineStore('product', {
     setQuery(newQuery: string) {
       this.query = newQuery
     }
+  },
+  persist: {
+    enabled: true,
+    strategies: [
+      {
+        key: 'product',
+        storage: localStorage,
+        paths: ['query']
+      }
+    ]
   }
 })
