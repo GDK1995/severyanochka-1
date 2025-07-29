@@ -16,19 +16,14 @@ export const useProductStore = defineStore('product', {
     limitedProducts: (state) => state.products.slice(0, 4),
     limitedSaleProducts: (state) => state.products.filter(product => product.sale_price).slice(0, 4),
     shuffledProducts: (state) => [...state.products].sort(() => Math.random() - 0.5).slice(0, 4)
-    // searchedProducts(state) {
-    //   const q = state.query.trim().toLowerCase()
-    //   if (!q) return []
-    //   state.searched = state.products.filter(product => product.title.toLowerCase().includes(q))
-    // }
   },
   actions: {
-    setQuery(q: string) {
-      this.query = q.trim()
-    },
     searchProduct(q: string) {
-      this.setQuery(q)
-      if (!this.query) return []
+      this.query = q.trim()
+      if (!this.query) {
+        this.searched = []
+        return
+      }
       this.searched = this.products.filter(product =>
         product.title.toLowerCase().includes(this.query.toLowerCase())
       )
