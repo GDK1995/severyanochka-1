@@ -32,7 +32,7 @@ const props = defineProps<{
       <h3 class="text_s card_titles">{{ product.title }}</h3>
       <p class="text_s card_titles">{{ product.desc }}</p>
       <RateStars :rate="product.rate"/>
-      <outline-bttn />
+      <outline-bttn :text="$t('to_cart')" />
     </div>
   </article>
 </template>

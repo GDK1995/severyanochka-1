@@ -9,10 +9,10 @@
       <button type="submit">{{$t('login')}}</button>
     </form>
     <div class="auth_link">
-      <router-link>
+      <router-link class="outline_bttn text_s">
         {{$t('signup')}}
       </router-link>
-      <router-link>
+      <router-link class="text_xs">
         {{$t('forget_password')}}
       </router-link>
     </div>
