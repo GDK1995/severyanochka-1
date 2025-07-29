@@ -19,6 +19,7 @@ function highlightMatch(text: string, query: string) {
 function handleClick(q: string) {
   productStore.searchProduct(q)
   router.push('/results')
+  productStore.setQuery('')
 }
 </script>
 
@@ -32,6 +33,7 @@ function handleClick(q: string) {
         id="search-input"
         type="search"
         :placeholder="$t('search_item')"
+        v-model="productStore.query"
         @input="productStore.searchProduct($event.target.value)">
       <div class="search_icon" v-html="SEARCH"/>
     </div>
