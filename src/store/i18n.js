@@ -33,7 +33,11 @@ const messages = {
     policy_conf: 'Политика обработки персональных данных',
     results_of_search: 'Результаты поиска',
     on_request: 'по запросу',
-    nothing_found: 'ничего не найдено'
+    nothing_found: 'ничего не найдено',
+    signup: 'Регистрация',
+    forget_password: 'Забыли пароль?',
+    log_in: 'Логин',
+    password: 'Пароль'
   },
   en: {
     sever: 'Северяночка',
@@ -69,7 +73,11 @@ const messages = {
     policy_conf: 'Personal data processing policy',
     results_of_search: 'Results of search',
     on_request: 'on request',
-    nothing_found: 'nothing found'
+    nothing_found: 'nothing found',
+    signup: 'Signup',
+    forget_password: 'Forgot your password?',
+    log_in: 'Login',
+    password: 'Password'
   },
   kz: {
     sever: 'Северяночка',
@@ -105,7 +113,11 @@ const messages = {
     policy_conf: 'Жеке деректерді өңдеу саясаты',
     results_of_search: 'Іздеу нәтижелері',
     on_request: 'сұраныс бойынша',
-    nothing_found: 'ештеңе табылмады'
+    nothing_found: 'ештеңе табылмады',
+    signup: 'Тіркеу',
+    forget_password: 'Құпия сөзіңізді ұмыттыңыз ба?',
+    log_in: 'Логин',
+    password: 'Құпиясөз'
   }
 }
 

@@ -6,6 +6,7 @@ import SearchInput from './../inputs/SearchInput.vue'
 import NavItem from './NavItem.vue'
 import ProfileNav from './ProfileNav.vue'
 import BaseModal from './../../components/modal/BaseModal.vue'
+import AuthBlock from './../auth/AuthBlock.vue'
 import { ref } from 'vue'
 
 const isToggle = ref(false)
@@ -30,10 +31,10 @@ function openModal() {
     <div class="header_nav">
       <nav-item />
       <profile-nav v-if="isToggle" />
-      <log-in-bttn @click="openModal" v-else/>
+      <log-in-bttn v-else @click="openModal" />
     </div>
     <base-modal v-model="isModal">
-      <h2>ghjk</h2>
+      <AuthBlock />
     </base-modal>
   </header>
 </template>

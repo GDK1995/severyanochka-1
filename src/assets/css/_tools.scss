@@ -365,3 +365,24 @@
     cursor: pointer;
     line-height: 1;
   }
+
+//auth
+.auth {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 40px;
+
+    h2 {
+        margin-inline: auto;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.auth_link {
+
+}
