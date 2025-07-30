@@ -8,3 +8,11 @@ export interface Product {
   currency: string
   image: string
 }
+
+export interface User {
+  id: number,
+  username: string,
+  password: string,
+  avatar: string,
+  token: string
+}

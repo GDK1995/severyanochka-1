@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref, computed } from 'vue'
 import Logo from './Logo.vue'
 import MainBttn from './../buttons/MainBttn.vue'
 import LogInBttn from './../buttons/LogInBttn.vue'
@@ -7,14 +8,12 @@ import NavItem from './NavItem.vue'
 import ProfileNav from './ProfileNav.vue'
 import BaseModal from './../../components/modal/BaseModal.vue'
 import AuthBlock from './../auth/AuthBlock.vue'
-import { ref } from 'vue'
+import { useAuthSetupStore } from './../../store/auth'
 
-const isToggle = ref(false)
+const authStore = useAuthSetupStore()
+const isToggle = computed(() => authStore.token)
+
 const isModal = ref(false)
-
-function toggle() {
-  isToggle.value = !isToggle.value
-}
 
 function openModal() {
   isModal.value = !isModal.value
@@ -34,7 +33,7 @@ function openModal() {
       <log-in-bttn v-else @click="openModal" />
     </div>
     <base-modal v-model="isModal">
-      <AuthBlock />
+      <AuthBlock v-model="isModal" />
     </base-modal>
   </header>
 </template>

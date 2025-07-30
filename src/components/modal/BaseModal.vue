@@ -1,19 +1,19 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref, watch } from 'vue';
+import { onMounted, onUnmounted, ref, watch } from 'vue'
 
 const props = defineProps({
   modelValue: Boolean
 });
-const emit = defineEmits(['update:modelValue']);
+const emit = defineEmits(['update:modelValue'])
 
-const close = () => emit('update:modelValue', false);
+const close = () => emit('update:modelValue', false)
 
 const handleEsc = (e) => {
-  if (e.key === 'Escape') close();
+  if (e.key === 'Escape') close()
 };
 
-onMounted(() => document.addEventListener('keydown', handleEsc));
-onUnmounted(() => document.removeEventListener('keydown', handleEsc));
+onMounted(() => document.addEventListener('keydown', handleEsc))
+onUnmounted(() => document.removeEventListener('keydown', handleEsc))
 </script>
 
 <template>

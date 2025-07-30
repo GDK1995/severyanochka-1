@@ -3,19 +3,22 @@ export const users = [
     id: 1,
     username: 'mia',
     password: '111',
-    avatar: '/1.jpg'
+    avatar: '/avatars/1.jpg',
+    token: 'FYEF55E1RGDF18RG1DF8ER51DF4ER51D84FE'
   },
   {
     id: 2,
     username: 'damir',
     password: '111',
-    avatar: '/2.jpg'
+    avatar: '/avatars/2.jpg',
+    token: '51T6B5DFVSTB8SDFV51SDF5VSG15FS2VSDF4'
   },
   {
     id: 3,
     username: 'aset',
     password: '111',
-    avatar: '/3.jpg'
+    avatar: '/avatars/3.jpg',
+    token: '51T6B5D51STB8SDRV51SED5VSG15FS2VSDF3'
   }
 ]
 
