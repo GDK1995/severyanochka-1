@@ -192,3 +192,34 @@ export const articles = [
     date: '20.03.2025'
   }
 ]
+
+export const catalogList = [
+  {
+    title: 'Молоко, сыр, яйцо',
+    cover: 'img.png'
+  },
+  {
+    title: 'Хлеб',
+    cover: 'img (1).png'
+  },
+  {
+    title: 'Овощи, фрукты',
+    cover: 'img (2).png'
+  },
+  {
+    title: 'Замороженные продукты',
+    cover: 'img (3).png'
+  },
+  {
+    title: 'Напитки',
+    cover: 'img (4).png'
+  },
+  {
+    title: 'Кондитерские изделия',
+    cover: 'img (5).png'
+  },
+  {
+    title: 'Чай, кофе',
+    cover: 'img (6).png'
+  }
+]
