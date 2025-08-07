@@ -47,7 +47,7 @@ const listTitels: titleItem[] = [
 </script>
 
 <template>
-  <main class="space_main">
+  <main class="space_main space_120">
     <MainBanner />
     <PartList
       v-for="(item, index) in listTitels"
