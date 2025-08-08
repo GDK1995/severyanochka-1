@@ -209,6 +209,7 @@ main {
     flex-direction: column;
     padding: 0 8px 40px;
     flex: 1;
+    justify-content: center;
 }
 
 .space_120 {
@@ -334,4 +335,10 @@ footer {
             fill: var(--whiteColor);
         }
     }
+}
+
+// catalog page
+.catalog {
+    display: flex;
+    flex-direction: column;
 }

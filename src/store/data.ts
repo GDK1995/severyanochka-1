@@ -196,30 +196,30 @@ export const articles = [
 export const catalogList = [
   {
     title: 'Молоко, сыр, яйцо',
-    cover: 'img.png'
+    cover: '/catalog/img.png'
   },
   {
     title: 'Хлеб',
-    cover: 'img (1).png'
+    cover: '/catalog/img (1).png'
   },
   {
     title: 'Овощи, фрукты',
-    cover: 'img (2).png'
+    cover: '/catalog/img (2).png'
   },
   {
     title: 'Замороженные продукты',
-    cover: 'img (3).png'
+    cover: '/catalog/img (3).png'
   },
   {
     title: 'Напитки',
-    cover: 'img (4).png'
+    cover: '/catalog/img (4).png'
   },
   {
     title: 'Кондитерские изделия',
-    cover: 'img (5).png'
+    cover: '/catalog/img (5).png'
   },
   {
     title: 'Чай, кофе',
-    cover: 'img (6).png'
+    cover: '/catalog/img (6).png'
   }
 ]

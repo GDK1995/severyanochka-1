@@ -4,7 +4,7 @@ import { BURGER } from './../../store/icons'
 
 
 <template>
-  <router-link to="/" class="secondary_bttn">
+  <router-link to="/catalog" class="secondary_bttn">
     <div class="inside_bttn_position">
       <div class="icon" v-html="BURGER" />
       <p class="text_s">{{$t('catalog')}}</p>

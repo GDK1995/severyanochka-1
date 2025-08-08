@@ -36,7 +36,6 @@ function toBase64Url(str) {
 
 const jsonString = JSON.stringify(utm)
 const startParam = toBase64Url(jsonString)
-console.log(startParam)
 </script>
 
 <template>
