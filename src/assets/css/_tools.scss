@@ -438,6 +438,10 @@
         color: var(--whiteColor);
         z-index: 1;
     }
+
+    img {
+        width: auto;
+    }
 }
 
 .catalog_card-cover {

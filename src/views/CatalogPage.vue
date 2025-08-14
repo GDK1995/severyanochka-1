@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import CatalogCard from './../components/items/CatalogCard.vue'
 import { catalogList } from './../store/data' 
+
+const cardList = document.getElementsByClassName('catalog_card-item')
+console.log(cardList)
+for(let i=0; i < cardList.length; i++) {
+  console.log(cardList[i])
+}
 </script>
 
 <template>

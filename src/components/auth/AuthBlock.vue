@@ -20,27 +20,10 @@ async function handleSignIn() {
     emit('update:modelValue', false)
   }
 }
-
-const utm = {
-  utm_source: "site",
-  utm_medium: "button",
-  utm_campaign: "summer_sale"
-}
-
-function toBase64Url(str) {
-  return btoa(str)
-    .replace(/\+/g, '-')
-    .replace(/\//g, '_')
-    .replace(/=+$/, '')
-}
-
-const jsonString = JSON.stringify(utm)
-const startParam = toBase64Url(jsonString)
 </script>
 
 <template>
   <div class="auth">
-    <a class="outline_bttn text_s" :href="`https://t.me/AppToTestBot?start=${startParam}`" rel="noopener noreferrer">TG</a>
     <h2>{{$t('login')}}</h2>
     <form action="#" @submit.prevent="handleSignIn">
       <div v-for="(elem, index) in authId" :key="elem" class="form_inputs">

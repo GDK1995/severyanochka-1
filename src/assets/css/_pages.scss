@@ -111,8 +111,6 @@
 .search_page {
     display: flex;
     flex-direction: column;
-    max-width: var(--widthInContent);
-    margin-inline: auto;
     gap: 24px;
     width: 100%;
     padding-top: 40px;
@@ -144,8 +142,6 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: var(--widthInContent);
-    margin-inline: auto;
     gap: 40px;
 }
 
@@ -197,8 +193,6 @@
 .shops {
     display: flex;
     flex-direction: column;
-    margin-inline: auto;
-    max-width: var(--widthInContent);
     width: 100%;
     gap: 40px;
 }
@@ -210,6 +204,8 @@ main {
     padding: 0 8px 40px;
     flex: 1;
     justify-content: center;
+    max-width: var(--widthInContent);
+    margin-inline: auto;
 }
 
 .space_120 {
@@ -338,8 +334,3 @@ footer {
 }
 
 // catalog page
-.catalog {
-    display: flex;
-    flex-direction: column;
-    margin-inline: auto;
-}
