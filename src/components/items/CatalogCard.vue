@@ -12,22 +12,21 @@ const props = defineProps({
 
 const imgEl = ref<HTMLElement | null>(null)
 
-const cssSmall = computed(() => {
-  const deltaWidth = props.width - 120
-  const widthOfImg = deltaWidth * 0.2
-  return { width: `${widthOfImg}px` }
-})
-
-const cssBig = computed(() => {
-  const deltaWidth = props.width - 120
-  const widthOfImg = deltaWidth * 0.4
+const cssItem = computed(() => {
+  let widthOfImg: number
+  if (imgEl.value) {
+    console.log('>>', imgEl.value.clientWidth, props.width)
+    const deltaWidth = props.width - 120
+    if (imgEl.value.clientWidth < 200) {
+      widthOfImg = deltaWidth * 0.2
+    } else {
+      widthOfImg = deltaWidth * 0.4
+    }
+  }
   return { width: `${widthOfImg}px` }
 })
 
 onMounted(() => {
-  if (imgEl.value) {
-
-  }
 })
 </script>
 
@@ -42,7 +41,7 @@ onMounted(() => {
         ref="imgEl"
         :src="props.catalogItem.cover"
         :alt="props.catalogItem.title"
-        :class="[imgEl.clientWidth < 200 ? 'cssSmall' : 'cssBig']">
+        :class="cssItem">
     </figure>
   </div>
-</template>
+</template> 

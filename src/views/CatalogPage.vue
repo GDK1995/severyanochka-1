@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import CatalogCard from './../components/items/CatalogCard.vue'
 import { catalogList } from './../store/data'
-import { onMounted, ref, nextTick } from 'vue'
+import { onMounted, ref } from 'vue'
 
 const width = ref<number | null>(null)
 
 onMounted(() => {
   width.value = document.querySelector('main').offsetWidth
+  console.dir('<<', width.value)
 })
 </script>
 
