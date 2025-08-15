@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import CatalogCard from './../components/items/CatalogCard.vue'
-import { catalogList } from './../store/data' 
+import { catalogList } from './../store/data'
+import { onMounted, ref, nextTick } from 'vue'
 
-const cardList = document.getElementsByClassName('catalog_card-item')
-console.log(cardList)
-for(let i=0; i < cardList.length; i++) {
-  console.log(cardList[i])
-}
+const width = ref<number | null>(null)
+
+onMounted(() => {
+  width.value = document.querySelector('main').offsetWidth
+})
 </script>
 
 <template>
@@ -18,7 +19,8 @@ for(let i=0; i < cardList.length; i++) {
       <catalog-card
         v-for="catalog in catalogList"
         :key="catalog"
-        :catalog-item="catalog"/>
+        :catalog-item="catalog"
+        :width="width"/>
     </div>
   </main>
 </template>
