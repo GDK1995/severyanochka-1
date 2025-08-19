@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { defineProps, defineEmits, ref, watchEffect } from 'vue'
+import { MAXIMUM_PRICE } from './../../store/data'
 
 const props = defineProps({
   maximum: {
     type: Number,
-    default: 10000
+    default: MAXIMUM_PRICE
   },
   minimum: {
     type: Number,
@@ -13,8 +14,8 @@ const props = defineProps({
 })
 
 const emit = defineEmits<{
-  (e: 'update:maximum', value: number): void
-  (e: 'update:minimum', value: number): void
+  (e: 'range-max', value: number): void
+  (e: 'range-min', value: number): void
 }>()
 
 const updMax = ref(null)
@@ -26,21 +27,21 @@ watchEffect(() => {
 })
 
 function setPriceMax () {
-  emit('update:maximum', updMax.value)
+  emit('range-max', updMax.value)
 }
 
 function setPriceMin () {
-  emit('update:minimum', updMin.value)
+  emit('range-min', updMin.value)
 }
 </script>
 
 <template>
   <div class="range">
     <div class="range-text">
-      <p>
+      <p class="text_s">
         {{$t('price')}}
       </p>
-      <button>
+      <button class="text_xs">
         {{$t('clear')}}
       </button>
     </div>
@@ -50,7 +51,7 @@ function setPriceMin () {
       <input v-model="updMax" @input="setPriceMax" type="number" name="to" id="to">
     </div>
     <div class="range-slider">
-      <input v-model="updMin" @change="setPriceMin" type="range" class="min" min="0" max="10000" step="10">
+      <input v-model="updMin" @change="setPriceMin" type="range" class="min" min="0" :max="MAXIMUM_PRICE" step="10">
       <input v-model="updMax" @change="setPriceMax" type="range" class="max" min="0" max="10000" step="10">
     </div>
   </div>

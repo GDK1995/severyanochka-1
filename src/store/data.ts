@@ -243,3 +243,5 @@ export const catalogList = [
     cover: '/catalog/img (6).png'
   }
 ]
+
+export const MAXIMUM_PRICE = 10000
