@@ -1,18 +1,22 @@
 <script setup lang="ts">
 import CatalogCard from './../components/items/CatalogCard.vue'
 import { catalogList } from './../store/data'
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, nextTick } from 'vue'
 
 const width = ref<number | null>(null)
+const mainEl = ref<HTMLElement | null>(null)
 
 onMounted(() => {
-  width.value = document.querySelector('main').offsetWidth
-  console.dir('<<', width.value)
+  nextTick(() => {
+    width.value = mainEl.value.offsetWidth
+    console.dir(mainEl.value)
+    console.log(mainEl.value.offsetWidth)
+  })
 })
 </script>
 
 <template>
-  <main class="catalog">
+  <main class="catalog" ref="mainEl">
     <div></div>
     <h1 class="text_m_header">{{$t('catalog')}}</h1>
     <div
