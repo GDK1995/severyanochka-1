@@ -19,13 +19,13 @@ onMounted(() => {
   <main class="catalog" ref="mainEl">
     <div></div>
     <h1 class="text_m_header">{{$t('catalog')}}</h1>
-    <div
-      class="catalog_card">
+    <router-link
+      v-for="catalog in catalogList"
+      :key="catalog"
+      :to="{ name: 'category page', params: { id: catalog.id } }">
       <catalog-card
-        v-for="catalog in catalogList"
-        :key="catalog"
         :catalog-item="catalog"
         :width="width"/>
-    </div>
+    </router-link>
   </main>
 </template>

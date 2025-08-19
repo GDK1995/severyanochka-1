@@ -37,7 +37,9 @@ const messages = {
     signup: 'Регистрация',
     forget_password: 'Забыли пароль?',
     log_in: 'Логин',
-    password: 'Пароль'
+    password: 'Пароль',
+    clear: 'Очистить',
+    price: 'Цена'
   },
   en: {
     sever: 'Северяночка',
@@ -77,7 +79,9 @@ const messages = {
     signup: 'Signup',
     forget_password: 'Forgot your password?',
     log_in: 'Login',
-    password: 'Password'
+    password: 'Password',
+    clear: 'Clear',
+    price: 'Price'
   },
   kz: {
     sever: 'Северяночка',
@@ -117,7 +121,9 @@ const messages = {
     signup: 'Тіркеу',
     forget_password: 'Құпия сөзіңізді ұмыттыңыз ба?',
     log_in: 'Логин',
-    password: 'Құпиясөз'
+    password: 'Құпиясөз',
+    clear: 'Тазалау',
+    price: 'Баға'
   }
 }
 

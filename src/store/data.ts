@@ -31,7 +31,8 @@ export const products = [
     price: 100,
     sale_price: 50,
     currency: 'KZ',
-    image: '/products/image.png'
+    image: '/products/image.png',
+    category: 1
   },
   {
     id: 2,
@@ -41,7 +42,8 @@ export const products = [
     price: 150,
     sale_price: 60,
     currency: 'KZ',
-    image: '/products/kolbasa.png'
+    image: '/products/kolbasa.png',
+    category: 1
   },
   {
     id: 3,
@@ -51,7 +53,8 @@ export const products = [
     price: 100,
     sale_price: 0,
     currency: 'KZ',
-    image: '/products/butter.png'
+    image: '/products/butter.png',
+    category: 2
   },
   {
     id: 4,
@@ -61,7 +64,8 @@ export const products = [
     price: 1020,
     sale_price: 540,
     currency: 'KZ',
-    image: '/products/leksika-angl.jpeg'
+    image: '/products/leksika-angl.jpeg',
+    category: 2
   },
   {
     id: 5,
@@ -71,7 +75,8 @@ export const products = [
     price: 500,
     sale_price: 150,
     currency: 'KZ',
-    image: '/products/leksika-angl.jpeg'
+    image: '/products/leksika-angl.jpeg',
+    category: 3
   },
   {
     id: 6,
@@ -81,7 +86,8 @@ export const products = [
     price: 100,
     sale_price: 50,
     currency: 'KZ',
-    image: '/products/image1.png'
+    image: '/products/image1.png',
+    category: 1
   },
   {
     id: 7,
@@ -91,7 +97,8 @@ export const products = [
     price: 330,
     sale_price: 0,
     currency: 'KZ',
-    image: '/products/kolbasa.png'
+    image: '/products/kolbasa.png',
+    category: 2
   },
   {
     id: 8,
@@ -101,7 +108,8 @@ export const products = [
     price: 530,
     sale_price: 0,
     currency: 'KZ',
-    image: '/products/image1.png'
+    image: '/products/image1.png',
+    category: 4
   },
   {
     id: 9,
@@ -111,7 +119,8 @@ export const products = [
     price: 1030,
     sale_price: 0,
     currency: 'KZ',
-    image: '/products/image1.png'
+    image: '/products/image1.png',
+    category: 5
   },
   {
     id: 10,
@@ -121,7 +130,8 @@ export const products = [
     price: 2130,
     sale_price: 0,
     currency: 'KZ',
-    image: '/products/image1.png'
+    image: '/products/image1.png',
+    category: 5
   },
   {
     id: 11,
@@ -131,7 +141,8 @@ export const products = [
     price: 2130,
     sale_price: 0,
     currency: 'KZ',
-    image: '/products/image1.png'
+    image: '/products/image1.png',
+    category: 6
   },
   {
     id: 12,
@@ -141,7 +152,8 @@ export const products = [
     price: 2130,
     sale_price: 0,
     currency: 'KZ',
-    image: '/products/image1.png'
+    image: '/products/image1.png',
+    category: 6
   },
   {
     id: 13,
@@ -151,7 +163,8 @@ export const products = [
     price: 1130,
     sale_price: 0,
     currency: 'KZ',
-    image: '/products/image1.png'
+    image: '/products/image1.png',
+    category: 7
   }
 ]
 
@@ -195,30 +208,37 @@ export const articles = [
 
 export const catalogList = [
   {
+    id: 1,
     title: 'Молоко, сыр, яйцо',
     cover: '/catalog/img.png'
   },
   {
+    id: 2,
     title: 'Хлеб',
     cover: '/catalog/img (1).png'
   },
   {
+    id: 3,
     title: 'Овощи, фрукты',
     cover: '/catalog/img (2).png'
   },
   {
+    id: 4,
     title: 'Замороженные продукты',
     cover: '/catalog/img (3).png'
   },
   {
+    id: 5,
     title: 'Напитки',
     cover: '/catalog/img (4).png'
   },
   {
+    id: 6,
     title: 'Кондитерские изделия',
     cover: '/catalog/img (5).png'
   },
   {
+    id: 7,
     title: 'Чай, кофе',
     cover: '/catalog/img (6).png'
   }
