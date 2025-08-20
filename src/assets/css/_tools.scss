@@ -485,10 +485,6 @@
     outline: none;
 }
 
-.error {
-    border: 1px solid var(--error);
-}
-
 .range-number span {
     padding: 4px;
 }
@@ -534,4 +530,52 @@
   background-color: var(--secondaryColor);
   pointer-events: auto;
   -moz-appearance: none;
+}
+
+.toggle-control{
+  display: none;
+}
+
+input.toggle-control + label {
+  position: relative;
+  display: block;
+  width: 46px;
+  height: 24px;
+  background: #ddd;
+  border-radius: var(--borderRadiusToggle);
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  box-shadow: var(--shadow_of_toggle);
+}
+
+input.toggle-control + label::before, input.toggle-control + label::after {
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  content: '';
+  transition: all 0.4s;
+}
+
+input.toggle-control + label::before {
+  background: #f1f1f1;
+  border-radius: 160px;
+}
+
+input.toggle-control + label::after {
+  width: 20px;
+  background: var(--whiteColor);
+  border-radius: 100%;
+  box-shadow: var(--shadow_of_toggle_circle);
+}
+
+input.toggle-control:checked + label::before {
+  background: var(--secondaryColor);
+}
+
+input.toggle-control:checked + label::after {
+  margin-left: 20px;
 }

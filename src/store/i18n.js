@@ -39,7 +39,8 @@ const messages = {
     log_in: 'Логин',
     password: 'Пароль',
     clear: 'Очистить',
-    price: 'Цена'
+    price: 'Цена',
+    in_stock: 'В наличии'
   },
   en: {
     sever: 'Северяночка',
@@ -81,7 +82,8 @@ const messages = {
     log_in: 'Login',
     password: 'Password',
     clear: 'Clear',
-    price: 'Price'
+    price: 'Price',
+    in_stock: 'In stock'
   },
   kz: {
     sever: 'Северяночка',
@@ -123,7 +125,8 @@ const messages = {
     log_in: 'Логин',
     password: 'Құпиясөз',
     clear: 'Тазалау',
-    price: 'Баға'
+    price: 'Баға',
+    in_stock: 'Қоймада'
   }
 }
 
