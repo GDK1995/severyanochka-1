@@ -13,7 +13,6 @@ function setPrice (e: number, type: string): void {
 
 <template>
   <main>
-    {{rangeMax}}
     <range-item
       :maximum="rangeMax"
       :minimum="rangeMin"

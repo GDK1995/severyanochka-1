@@ -245,3 +245,5 @@ export const catalogList = [
 ]
 
 export const MAXIMUM_PRICE = 10000
+
+export const MINIMUM_PRICE = 0

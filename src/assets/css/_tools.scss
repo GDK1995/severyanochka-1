@@ -500,6 +500,15 @@
   pointer-events: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  z-index: 2;
+}
+
+.range-slider .progress {
+  position: absolute;
+  height: 5px;
+  border-radius: 5px;
+  background: var(--secondaryColor);
+  z-index: 1;
 }
 
 .range-slider input::-webkit-slider-thumb {
