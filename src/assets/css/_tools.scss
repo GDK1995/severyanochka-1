@@ -475,6 +475,7 @@
     cursor: pointer;
     border: none;
     background-color: transparent;
+    color: var(--grayHardest);
 }
 
 .range-number input {
@@ -482,6 +483,10 @@
     border-radius: var(--borderRadius);
     border: 1px solid var(--grayColor);
     outline: none;
+}
+
+.error {
+    border: 1px solid var(--error);
 }
 
 .range-number span {
