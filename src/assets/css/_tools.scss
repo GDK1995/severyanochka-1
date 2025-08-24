@@ -532,6 +532,17 @@
   -moz-appearance: none;
 }
 
+.toggle {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.toggle p {
+    // margin-bottom: auto;
+    // margin-top: auto;
+}
+
 .toggle-control{
   display: none;
 }
@@ -578,4 +589,11 @@ input.toggle-control:checked + label::before {
 
 input.toggle-control:checked + label::after {
   margin-left: 20px;
+}
+
+// category
+.category {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

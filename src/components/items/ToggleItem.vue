@@ -8,6 +8,6 @@ const modelValue = defineModel<boolean>()
   <div class="toggle">
     <input :checked="modelValue" @change="modelValue = !modelValue" type="checkbox" id="check" role="switch" class="toggle-control">
     <label for="check"></label>
-    <span>{{$t('in_stock')}}</span>
+    <p class="text_s">{{$t('in_stock')}}</p>
   </div>
 </template>

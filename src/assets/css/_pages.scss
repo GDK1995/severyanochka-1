@@ -212,6 +212,10 @@ main {
     gap: 120px;
 }
 
+.space_40 {
+    gap: 40px;
+}
+
 // footer
 footer {
     background-color: var(--footerBgColor);
@@ -334,3 +338,14 @@ footer {
 }
 
 // catalog page
+
+// category page
+.category {
+    display: flex;
+}
+
+.filter {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}

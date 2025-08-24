@@ -244,6 +244,131 @@ export const catalogList = [
   }
 ]
 
+export const categoryList = [
+  {
+    id: 0,
+    catalog_item: 1,
+    category: [
+      {
+        id: 0,
+        name: 'Молоко'
+      },
+      {
+        id: 1,
+        name: 'Сыр'
+      },
+      {
+        id: 2,
+        name: 'Сливки'
+      },
+      {
+        id: 3,
+        name: 'Яйцо'
+      }
+    ]
+  },
+  {
+    id: 1,
+    catalog_item: 2,
+    category: [
+      {
+        id: 0,
+        name: 'Хлеб'
+      },
+      {
+        id: 1,
+        name: 'Булочка'
+      }
+    ]
+  },
+  {
+    id: 2,
+    catalog_item: 3,
+    category: [
+      {
+        id: 0,
+        name: 'Картофель'
+      },
+      {
+        id: 1,
+        name: 'Лук'
+      },
+      {
+        id: 2,
+        name: 'Морковь'
+      }
+    ]
+  },
+  {
+    id: 3,
+    catalog_item: 4,
+    category: [
+      {
+        id: 0,
+        name: 'Рыбные'
+      },
+      {
+        id: 1,
+        name: 'Овощные'
+      },
+      {
+        id: 2,
+        name: 'Ягодные'
+      }
+    ]
+  },
+  {
+    id: 4,
+    catalog_item: 5,
+    category: [
+      {
+        id: 0,
+        name: 'Натуральный сок'
+      },
+      {
+        id: 1,
+        name: 'Газировнный'
+      },
+      {
+        id: 2,
+        name: 'Компот'
+      }
+    ]
+  },
+  {
+    id: 5,
+    catalog_item: 6,
+    category: [
+      {
+        id: 0,
+        name: 'Конфеты'
+      },
+      {
+        id: 1,
+        name: 'Торты'
+      },
+      {
+        id: 2,
+        name: 'Пироги'
+      }
+    ]
+  },
+  {
+    id: 6,
+    catalog_item: 7,
+    category: [
+      {
+        id: 0,
+        name: 'Чай'
+      },
+      {
+        id: 1,
+        name: 'Кофе'
+      }
+    ]
+  }
+]
+
 export const MAXIMUM_PRICE = 10000
 
 export const MINIMUM_PRICE = 0

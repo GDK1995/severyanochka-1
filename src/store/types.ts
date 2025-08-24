@@ -6,7 +6,8 @@ export interface Product {
   price: number
   sale_price: number
   currency: string
-  image: string
+  image: string,
+  category: number
 }
 
 export interface User {
@@ -15,4 +16,15 @@ export interface User {
   password: string,
   avatar: string,
   token: string
+}
+
+export interface Category {
+  id: number,
+  catalog_item: number,
+  category: Item[]
+}
+
+export interface Item {
+  id: number,
+  name: string
 }
